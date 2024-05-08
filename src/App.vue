@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import toolBar from "./public/components/toolBar.component.vue";
+</script>
 
 <template>
-	<h1>App</h1>
+	<toolBar />
+	<router-view></router-view>
 </template>
 
 <style scoped></style>
