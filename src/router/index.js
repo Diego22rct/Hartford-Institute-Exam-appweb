@@ -5,6 +5,7 @@
  */
 import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent from "../public/pages/Home/home.component.vue";
+import notFoundComponent from "../public/pages/notFound/notFound.component.vue";
 
 const router = createRouter({
 	history: createWebHistory(),
@@ -12,11 +13,11 @@ const router = createRouter({
 		{ path: "/", redirect: "/home" },
 		{ path: "/:pathMatch(.*)*", component: notFoundComponent },
 		{ path: "/home", component: HomeComponent, meta: { title: "Home" } },
-		{
+		/* 		{
 			path: "/nursing/examiner-performance-overview",
 			component: pageMentalStateExams,
 			meta: { title: "Examiner Performance Overview" },
-		},
+		}, */
 	],
 });
 
