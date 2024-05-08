@@ -5,7 +5,9 @@ import App from "./App.vue";
 import router from "./router";
 
 // Primevue
-import PrimeVue from "primevue/config";
+import PrimeVue from "primevue/config"; // PrimeVue CSS
+import "primeflex/primeflex.css";
+import "primeicons/primeicons.css";
 import "primevue/resources/themes/mdc-light-indigo/theme.css";
 
 // PrimeVue Components
