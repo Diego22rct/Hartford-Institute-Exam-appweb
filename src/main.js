@@ -18,6 +18,7 @@ import Button from "primevue/button";
 import Card from "primevue/card";
 import Toolbar from "primevue/toolbar";
 import Image from "primevue/image";
+import SelectButton from "primevue/selectbutton";
 
 createApp(App)
 	.use(PrimeVue, { ripple: true })
@@ -27,4 +28,5 @@ createApp(App)
 	.component("pv-card", Card)
 	.component("pv-toolbar", Toolbar)
 	.component("pv-image", Image)
+	.component("pv-selectbutton", SelectButton)
 	.mount("#app");
