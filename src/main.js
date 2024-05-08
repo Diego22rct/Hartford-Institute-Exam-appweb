@@ -1,6 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+// i18n
+import i18n from "./locales";
+
 //router
 import router from "./router";
 
@@ -18,6 +21,7 @@ import Image from "primevue/image";
 
 createApp(App)
 	.use(PrimeVue, { ripple: true })
+	.use(i18n)
 	.use(router)
 	.component("pv-button", Button)
 	.component("pv-card", Card)
