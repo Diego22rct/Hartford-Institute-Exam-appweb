@@ -1,5 +1,24 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+//router
+import router from "./router";
+
+// Primevue
+import PrimeVue from "primevue/config";
+import "primevue/resources/themes/mdc-light-indigo/theme.css";
+
+// PrimeVue Components
+import Button from "primevue/button";
+import Card from "primevue/card";
+import Toolbar from "primevue/toolbar";
+import Image from "primevue/image";
+
+createApp(App)
+	.use(PrimeVue, { ripple: true })
+	.use(router)
+	.component("pv-button", Button)
+	.component("pv-card", Card)
+	.component("pv-toolbar", Toolbar)
+	.component("pv-image", Image)
+	.mount("#app");
