@@ -2,6 +2,12 @@
 export default {
 	name: "ExaminerCard",
 	props: {
+		/**
+		 * The examiner object.
+		 *
+		 * @type {Object}
+		 * @required
+		 */
 		examiner: {
 			type: Object,
 			required: true,
