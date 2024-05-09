@@ -3,7 +3,7 @@ import axios from "axios";
 /**
  * Represents a base HTTP API service.
  */
-export default class HttpApiBaseService {
+	export default class HttpApiBaseService {
 	/**
 	 * Creates an instance of HttpApiBaseService.
 	 */
