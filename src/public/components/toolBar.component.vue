@@ -13,7 +13,6 @@ export default {
 		 */
 		this.$i18n.availableLocales.forEach((locale) => {
 			this.availableLocales.push(locale);
-			console.log(this.availableLocales);
 		});
 	},
 	methods: {
