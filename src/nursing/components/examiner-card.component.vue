@@ -12,6 +12,7 @@ export default {
 </script>
 
 <template>
+  <div>
   <pv-card>
     <template #title>
       <h3>{{ examiner.fullName }} NPI:{{examiner.nationalProviderIdentifier}}</h3>
@@ -20,10 +21,11 @@ export default {
       <h4>{{$t("nursing.card.title")}}</h4>
     </template>
     <template #content>
-      <p>{{ $t("nursing.card.CurrentExamCount")}}: {{examiner.CurrentExamCount}}</p>
-      <p>{{$t("nursing.card.AverageExam")}}: {{examiner.AverageExam}}</p>
+      <p>{{ $t("nursing.card.CurrentExamCount")}}: <b>{{examiner.totalExams}}</b></p>
+      <p>{{$t("nursing.card.AverageExam")}}: <b>{{examiner.averageScore}}</b></p>
     </template>
   </pv-card>
+  </div>
 </template>
 
 <style scoped>
