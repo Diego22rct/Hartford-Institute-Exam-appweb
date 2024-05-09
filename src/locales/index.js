@@ -53,15 +53,17 @@ const i18n = createI18n({
 				title: "Resumen del rendimiento de los examinadores",
 				card: {
 					title: "Rendimiento del examen del estado mental",
-					CurrentExamCount: "Conteo actual de exámenes de estado mental asignados",
-					AverageExam: "Promedio de Calificación Total de Exámenes de Salud Mental Asignados",
+					CurrentExamCount:
+						"Conteo actual de exámenes de estado mental asignados",
+					AverageExam:
+						"Promedio de Calificación Total de Exámenes de Salud Mental Asignados",
 				},
 				sectionExaminer: {
 					title: "Resumen del rendimiento de los examinadores",
 				},
-				}
 			},
 		},
+	},
 });
 
 export default i18n;

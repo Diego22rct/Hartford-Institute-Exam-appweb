@@ -38,8 +38,8 @@ export default {
 						this.HighestScore = totalInExam;
 					}
 					if (this.LowestScore > totalInExam || this.LowestScore === 0) {
-            this.LowestScore = totalInExam;
-          }
+						this.LowestScore = totalInExam;
+					}
 					totalScore += totalInExam;
 				});
 				this.AverageScore = totalScore / exams.length;
