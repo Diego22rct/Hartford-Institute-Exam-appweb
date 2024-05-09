@@ -4,6 +4,10 @@ const i18n = createI18n({
 	locale: "en",
 	messages: {
 		en: {
+			navbar: {
+				home: "Home",
+				examinerPerformance: "Examiner Performance overview",
+			},
 			home: {
 				title: "Home",
 				text: "Welcome to HIGN",
@@ -22,6 +26,10 @@ const i18n = createI18n({
 			},
 		},
 		es: {
+			navbar: {
+				home: "Inicio",
+				examinerPerformance: "Resumen del rendimiento de los examinadores",
+			},
 			home: {
 				title: "Inicio",
 				text: "Bienvenido a HIGN",

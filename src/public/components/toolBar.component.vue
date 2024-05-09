@@ -31,11 +31,11 @@ export default {
 		<template #end>
 			<div class="flex align-items-center gap-2">
 				<router-link to="/home">
-					<pv-button label="Home" text plain severity="contrast" />
+					<pv-button :label="$t('navbar.home')" text plain severity="contrast" />
 				</router-link>
 				<router-link to="/nursing/examiner-performance-overview">
 					<pv-button
-						label="Examiner Performance overview"
+						:label="$t('navbar.examinerPerformance')"
 						text
 						plain
 						severity="contrast" />
