@@ -8,16 +8,24 @@ export default {
 		};
 	},
 	created() {
-    this.$i18n.availableLocales.forEach(locale => {
-      this.availableLocales.push(locale);
-      console.log(this.availableLocales)
-    });
+		/**
+		 * Initializes the availableLocales array with the available locales from the i18n plugin.
+		 */
+		this.$i18n.availableLocales.forEach((locale) => {
+			this.availableLocales.push(locale);
+			console.log(this.availableLocales);
+		});
 	},
-  methods: {
-    changeLocale(locale) {
-      this.$i18n.locale = locale;
-    },
-  },
+	methods: {
+		/**
+		 * Changes the locale of the application.
+		 *
+		 * @param {string} locale - The new locale to set.
+		 */
+		changeLocale(locale) {
+			this.$i18n.locale = locale;
+		},
+	},
 };
 </script>
 
@@ -31,7 +39,11 @@ export default {
 		<template #end>
 			<div class="flex align-items-center gap-2">
 				<router-link to="/home">
-					<pv-button :label="$t('navbar.home')" text plain severity="contrast" />
+					<pv-button
+						:label="$t('navbar.home')"
+						text
+						plain
+						severity="contrast" />
 				</router-link>
 				<router-link to="/nursing/examiner-performance-overview">
 					<pv-button
@@ -42,8 +54,9 @@ export default {
 				</router-link>
 				<pv-selectbutton
 					v-model="nowLocale"
-          :options="availableLocales"
-					aria-labelledby="basic" @change="changeLocale(nowLocale)" />
+					:options="availableLocales"
+					aria-labelledby="basic"
+					@change="changeLocale(nowLocale)" />
 			</div>
 		</template>
 	</pv-toolbar>

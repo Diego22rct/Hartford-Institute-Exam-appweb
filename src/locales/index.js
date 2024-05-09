@@ -18,7 +18,7 @@ const i18n = createI18n({
 					highestScore: "Highest Score",
 					lowestScore: "Lowest Score",
 					averageScore: "Average Score",
-				}
+				},
 			},
 			nursing: {
 				title: "Examiner Performance Overview",
@@ -40,7 +40,7 @@ const i18n = createI18n({
 					highestScore: "Puntuación más alta",
 					lowestScore: "Puntuación más baja",
 					averageScore: "Puntuación promedio",
-				}
+				},
 			},
 			nursing: {
 				title: "Resumen del rendimiento de los examinadores",
